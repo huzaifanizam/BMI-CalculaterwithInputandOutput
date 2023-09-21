@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=4000&q=80");
+    background-position: center;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-bottom: 3rem;
+  }
+  
+  .login-form {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    min-width: 260px;
+  }
+  
+  .login-input-container {
+    margin-top: 2rem;
+  }
+  
+  label {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  .input-content {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+  }
+  
+  label {
+    position: absolute;
+    margin-top: -30px;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    margin-top: -60px;
+    font-size: 12px;
+  }
+  
+  .input-content:focus {
+    outline: none !important;
+  }
+  
+  .login-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f8a9b;
+    font-size: 12px;
+  }
+  
+  .remember {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-btn {
+    background-color: #b3c4dd;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-radius: 5rem;
+    transform: scale(1);
+    transition: 0.2s;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  
+  .login-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .login-btn p {
+    color: white;
+    text-align: center;
+  }
+  
+  .sign-up {
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .sign-up b {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  #checkbox {
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    border: 0.5px solid #7f8a9b;
+    border-radius: 3px;
+    margin-right: 6px;
+    padding: 0px;
+  }
+  
+  #checkbox:active {
+    transform: scale(0.8);
+  }
+  
+  #checkbox-ico {
+    color: #7f8a9b;
+    display: none;
+  }
+.button{
+    height: auto;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 150px;
+    /* justify-items: center; */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 4.5px;
+   }  
+
+
+   .parag{
+    font-size: 16px;
+    font-weight: 150px;
+
+   }

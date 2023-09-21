@@ -4,62 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
+    <title>BMI Calculater App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
       .heightInputField {
         width: 5rem;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <h1>BMI Calculater</h1>
 
-    <form onsubmit="calculateBMI(); return false">
-      <label for="heightInputFeet"> Your Height </label>
 
-      <input
-        required
-        step="1"
-        class="heightInputField"
-        id="heightInputFeet"
-        type="number"
-        min="0"
-        max="10"
-        placeholder="Feet"
-      />
-      <input
-        required
-        step="1"
-        class="heightInputField"
-        id="heightInputInch"
-        type="number"
-        min="0"
-        max="11"
-        placeholder="Inch"
-      />
-      <br />
-
-      <label for="WeightInputKg"> Your Weight </label>
-
-      <input
-        required
-        step="0.1"
-        class="WeightInputField"
-        id="WeightInputKg"
-        type="number"
-        min="0"
-        max="150"
-        placeholder="85Kg"
-      />
-
-      <button type="submit">Calculate</button>
-    </form>
-
-    <div id="result">
-        <h2 id="tittle"></h2>
-        <p id="suggestion"></p>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form class="login-form" onsubmit="calculateBMI(); return false">
+      <h1>Welcome Back!</h1>
+      <div class="login-input-container">
+        <input class="input-content heightInputField" type="number" maxlength="50" required step="1"id="heightInputFeet"min="0" max="10"placeholder=""/>
+        <label>Height In Feet</label>
+      </div>
+      <div class="login-input-container">
+        <input class="input-content heightInputField" type="number" placeholder="" maxlength="50" required step="1"id="heightInputInch"min="0"max="11" />
+        <label>Height In Inch</label>
+      </div>
+      <div class="login-input-container">
+          <input class="input-content WeightInputField" type="number" placeholder="" maxlength="50" required step="0.1"id="WeightInputKg"min="0"max="150"/>
+          <label>Your Weight </label>
+        </div>
+        
+        <div class="login-btn">
+          <button class="button login-btn" type="submit">calculate</button>
+      </div>
+  </form>
+  
+  <br>
+  <br>
+  
+   <div id="result">
+      <div class="login-form">
+        <h1>BMI Calculater</h1>
+        <h1 id="tittle"></h1>
+        <h3 class="parag" id="suggestion"></h3>
+      </div>
     </div>
+    <br>
+    <br>
+    <br>
 
     <script src="app.mjs">
       

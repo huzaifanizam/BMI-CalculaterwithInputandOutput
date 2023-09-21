@@ -2,6 +2,8 @@ function calculateBMI() {
     let heightInputFeet = document.getElementById("heightInputFeet").value;
     let heightInputInch = document.querySelector("#heightInputInch").value;
 
+
+
     let WeightInputKg = document.querySelector("#WeightInputKg").value;
 
     heightInputFeet = parseInt(heightInputFeet);
